@@ -19,7 +19,7 @@ The data is ingested from the [LTA API](https://datamall.lta.gov.sg/content/data
 As of Oct 2021, there are about 5000 bus stops in Singapore. However, a limitation in the LTA API of 5000 calls per day means that this project has to be reduced in terms of scope. Therefore, this project will only display bus arrival information belonging to **bus interchanges**.
 
 # Data Architecture/Pipeline
-- **Data Ingestion (Kafka)**: A Kafka producer obtains bus interchange data from a CSV file and queries it with the LTA API. Real-time data belonging to these bus interchanges is consumed by a message broker. Related files: ltaProducer.py
+- **Message Broker (Kafka)**: A Kafka producer obtains bus interchange data from a CSV file and queries it with the LTA API. Real-time data belonging to these bus interchanges is consumed by a message broker. Related files: ltaProducer.py
 
 - **Storage (MongoDB)**: A Kafka consumer consumes the data and stores it in a key value database MongoDB. Documents are **updated** instead of inserted to reflect the updated bus arrival timings. Related files: mongoConsumer.py
 
