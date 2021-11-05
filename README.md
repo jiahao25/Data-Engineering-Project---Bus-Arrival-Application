@@ -14,11 +14,13 @@ In this Data Engineering project, I will showcase on how I design and create a b
 - UI/Visualization: Flask
 
 # Data Used
+![](https://raw.githubusercontent.com/jiahao25/Data-Engineering-Project---Bus-Arrival-Application/main/images/Screenshot%202021-11-05%20at%2011.24.46%20AM.png)
 The data is ingested from the [LTA API](https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html) (see the Bus Arrival section), which updates the bus arrival information in real time! Which means we can technically use the information displayed on the application to see when the bus are coming.
 
 As of Oct 2021, there are about 5000 bus stops in Singapore. However, a limitation in the LTA API of 5000 calls per day means that this project has to be reduced in terms of scope. Therefore, this project will only display bus arrival information belonging to **bus interchanges**.
 
 # Data Architecture/Pipeline
+
 - **Message Broker (Kafka)**: A Kafka producer obtains bus interchange data from a CSV file and queries it with the LTA API. Real-time data belonging to these bus interchanges is consumed by a message broker. Related files: ltaProducer.py
 
 - **Storage (MongoDB)**: A Kafka consumer consumes the data and stores it in a key value database MongoDB. Documents are **updated** instead of inserted to reflect the updated bus arrival timings. Related files: mongoConsumer.py
