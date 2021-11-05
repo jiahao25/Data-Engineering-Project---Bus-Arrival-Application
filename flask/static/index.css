@@ -1,0 +1,61 @@
+* CSS for search file */
+
+body {
+  font-family: Arial;
+}
+* {
+  box-sizing: border-box;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-left: none; 
+  cursor: pointer;
+}
+form.example button:hover {
+  background: #0b7dda;
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table,th,td {
+  border:  1px solid black;
+}
+
+td {
+  font-size: 18px;
+  text-align: center;
+}
+
+table {
+  width: 600px;
+}
+
+input[type=reset] {
+  padding: 10px;
+  font-size: 10px;
+  border: 1px solid grey;
+  width: 5%;
+  background: #55FF33;
+  cursor: pointer;
+}
+
+input[type=reset]:hover{
+  background: #46FD22;
+}
