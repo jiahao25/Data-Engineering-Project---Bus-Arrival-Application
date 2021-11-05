@@ -7,11 +7,11 @@ In this Data Engineering project, I will showcase on how I design and create a b
 2. To have fun building projects like this
 
 # Tools Used
-*Language: Python
-*Speed Layer: Apache Kafka
-*Storage: MongoDB
-*Orchestration: Apache Airflow
-*UI/Visualization: Flask
+- Language: Python
+- Speed Layer: Apache Kafka
+- Storage: MongoDB
+- Orchestration: Apache Airflow
+- UI/Visualization: Flask
 
 # Data Used
 The data is ingested from the [LTA API](https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html) (see the Bus Arrival section), which updates the bus arrival information in real time! Which means we can technically use the information displayed on the application to see when the bus are coming.
