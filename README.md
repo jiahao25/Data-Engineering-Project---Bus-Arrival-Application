@@ -8,7 +8,7 @@ In this Data Engineering project, I will showcase on how I design and create a b
 
 # Tools Used
 - Language: Python
-- Speed Layer: Apache Kafka
+- Data Ingestion: Apache Kafka
 - Storage: MongoDB
 - Orchestration: Apache Airflow
 - UI/Visualization: Flask
